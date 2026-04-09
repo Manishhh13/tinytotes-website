@@ -16,7 +16,6 @@ nav a{color:#fff;margin:0 10px;text-decoration:none}
 .image-placeholder{height:120px;background:#eee;margin-bottom:10px}
 .add-cart{background:#ff8fab;color:#fff;border:none;padding:5px;margin-top:5px;cursor:pointer}
 .cart-box{position:fixed;right:10px;top:80px;width:250px;background:#fff;border:1px solid #ccc;padding:10px;border-radius:10px}
-.cart-box h3{text-align:center}
 .cart-item{display:flex;justify-content:space-between;margin:5px 0}
 .remove-btn{background:red;color:#fff;border:none;padding:2px 5px;cursor:pointer}
 .checkout{background:green;color:#fff;border:none;padding:8px;width:100%;margin-top:10px}
@@ -30,7 +29,6 @@ nav a{color:#fff;margin:0 10px;text-decoration:none}
 <div class="logo">LOGO</div>
 <h2>TinyTotes</h2>
 <nav>
-<a href="#">Home</a>
 <a href="#firstcry">FirstCry</a>
 <a href="#mothercare">Mothercare</a>
 <a href="#johnsons">Johnsons</a>
@@ -45,15 +43,59 @@ nav a{color:#fff;margin:0 10px;text-decoration:none}
 
 <div class="container">
 
+<!-- FIRSTCRY -->
 <h2 id="firstcry">FirstCry</h2>
 <div class="products">
 <div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Dress')">Baby Dress</h4><button class="add-cart" onclick="addToCart('Baby Dress',299)">Add</button></div>
 <div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Toy Car')">Toy Car</h4><button class="add-cart" onclick="addToCart('Toy Car',199)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Stroller')">Stroller</h4><button class="add-cart" onclick="addToCart('Stroller',2499)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Bottle')">Baby Bottle</h4><button class="add-cart" onclick="addToCart('Baby Bottle',149)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Blanket')">Baby Blanket</h4><button class="add-cart" onclick="addToCart('Baby Blanket',499)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Diapers')">Diapers</h4><button class="add-cart" onclick="addToCart('Diapers',799)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Shoes')">Baby Shoes</h4><button class="add-cart" onclick="addToCart('Baby Shoes',599)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Cap')">Baby Cap</h4><button class="add-cart" onclick="addToCart('Baby Cap',99)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Socks')">Baby Socks</h4><button class="add-cart" onclick="addToCart('Baby Socks',79)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Milk Powder')">Milk Powder</h4><button class="add-cart" onclick="addToCart('Milk Powder',699)">Add</button></div>
+</div>
+
+<!-- MOTHERCARE -->
+<h2 id="mothercare">Mothercare</h2>
+<div class="products">
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Romper')">Romper</h4><button class="add-cart" onclick="addToCart('Romper',399)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Shampoo')">Baby Shampoo</h4><button class="add-cart" onclick="addToCart('Baby Shampoo',249)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Chair')">Baby Chair</h4><button class="add-cart" onclick="addToCart('Baby Chair',1499)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Feeding Bottle')">Feeding Bottle</h4><button class="add-cart" onclick="addToCart('Feeding Bottle',199)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Blanket MC')">Baby Blanket</h4><button class="add-cart" onclick="addToCart('Baby Blanket MC',599)">Add</button></div>
+</div>
+
+<!-- JOHNSONS -->
+<h2 id="johnsons">Johnsons</h2>
+<div class="products">
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Oil')">Baby Oil</h4><button class="add-cart" onclick="addToCart('Baby Oil',199)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Powder')">Baby Powder</h4><button class="add-cart" onclick="addToCart('Baby Powder',149)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Soap')">Baby Soap</h4><button class="add-cart" onclick="addToCart('Baby Soap',99)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Baby Cream')">Baby Cream</h4><button class="add-cart" onclick="addToCart('Baby Cream',179)">Add</button></div>
+</div>
+
+<!-- NAUTINATI -->
+<h2 id="nautinati">Nautinati</h2>
+<div class="products">
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Kids Dress')">Kids Dress</h4><button class="add-cart" onclick="addToCart('Kids Dress',499)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('T-shirt')">T-shirt</h4><button class="add-cart" onclick="addToCart('T-shirt',299)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Kids Jeans')">Kids Jeans</h4><button class="add-cart" onclick="addToCart('Kids Jeans',699)">Add</button></div>
+</div>
+
+<!-- SKILLMATICS -->
+<h2 id="skillmatics">Skillmatics</h2>
+<div class="products">
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Learning Kit')">Learning Kit</h4><button class="add-cart" onclick="addToCart('Learning Kit',699)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Puzzle Game')">Puzzle Game</h4><button class="add-cart" onclick="addToCart('Puzzle Game',349)">Add</button></div>
+<div class="product"><div class="image-placeholder"></div><h4 onclick="openDetail('Flash Cards')">Flash Cards</h4><button class="add-cart" onclick="addToCart('Flash Cards',299)">Add</button></div>
 </div>
 
 </div>
 
-<!-- CART UI -->
+<!-- CART -->
 <div class="cart-box">
 <h3>Cart</h3>
 <div id="cartItems"></div>
@@ -61,7 +103,7 @@ nav a{color:#fff;margin:0 10px;text-decoration:none}
 <button class="checkout">Checkout</button>
 </div>
 
-<!-- PRODUCT DETAIL -->
+<!-- MODAL -->
 <div class="modal" id="detailModal">
 <div class="modal-content">
 <h3 id="detailTitle"></h3>
@@ -76,53 +118,47 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 renderCart();
 
 function addToCart(name, price){
-  cart.push({name, price});
-  saveCart();
-  renderCart();
+cart.push({name, price});
+saveCart();
+renderCart();
 }
 
 function renderCart(){
-  let container = document.getElementById('cartItems');
-  container.innerHTML = '';
-  let total = 0;
-
-  cart.forEach((item, index) => {
-    total += item.price;
-    container.innerHTML += `<div class="cart-item">${item.name} ₹${item.price} <button class="remove-btn" onclick="removeItem(${index})">X</button></div>`;
-  });
-
-  document.getElementById('total').innerText = 'Total: ₹' + total;
+let container = document.getElementById('cartItems');
+container.innerHTML = '';
+let total = 0;
+cart.forEach((item,index)=>{
+total += item.price;
+container.innerHTML += `<div class="cart-item">${item.name} ₹${item.price} <button class="remove-btn" onclick="removeItem(${index})">X</button></div>`;
+});
+document.getElementById('total').innerText = 'Total: ₹' + total;
 }
 
 function removeItem(index){
-  cart.splice(index, 1);
-  saveCart();
-  renderCart();
+cart.splice(index,1);
+saveCart();
+renderCart();
 }
 
 function openDetail(name){
-  document.getElementById('detailTitle').innerText = name;
-  document.getElementById('detailPrice').innerText = 'Price: ₹___';
-  document.getElementById('detailModal').style.display = 'block';
+document.getElementById('detailTitle').innerText=name;
+document.getElementById('detailPrice').innerText='Price: ₹___';
+document.getElementById('detailModal').style.display='block';
 }
 
 function closeDetail(){
-  document.getElementById('detailModal').style.display = 'none';
+document.getElementById('detailModal').style.display='none';
 }
 
 function saveCart(){
-  localStorage.setItem('cart', JSON.stringify(cart));
+localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Checkout Button Action
 window.onload = function(){
-  document.querySelector('.checkout').addEventListener('click', function(){
-    if(cart.length === 0){
-      alert('Your cart is empty');
-    } else {
-      alert('Proceeding to checkout! (Next step: Payment Integration)');
-    }
-  });
+document.querySelector('.checkout').addEventListener('click', function(){
+if(cart.length === 0){alert('Your cart is empty');}
+else{alert('Proceeding to checkout');}
+});
 };
 </script>
 
